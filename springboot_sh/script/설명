@@ -1,0 +1,11 @@
+├── backup                          // 백업폴더
+│   └── app_20221101.jar
+├── app.jar         // 배포파일
+├── app.pid                        // 프로세스 ID 파일
+├── nohup.out                       // 로그파일
+└── script
+    ├── pid.sh                      // pid 조회 
+    ├── restart.sh                  // 재시작 (젠킨스에서 사용)
+    ├── run.sh                      // 시작
+    ├── status.sh                   // 상태조회
+    └── stop.sh                     // 종료
