@@ -1,7 +1,7 @@
 ├── backup                          // 백업폴더
 │   └── app_20221101.jar
-├── app.jar         // 배포파일
-├── app.pid                        // 프로세스 ID 파일
+├── app.jar                         // 배포파일
+├── app.pid                         // 프로세스 ID 파일
 ├── nohup.out                       // 로그파일
 └── script
     ├── pid.sh                      // pid 조회 
