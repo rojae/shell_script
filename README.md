@@ -18,6 +18,11 @@
 │   │   └── runnerState.sh
 │   ├── cron
 │   └── db_backup_files
+├── pm2
+│   ├── pm2-monitor.sh
+│   ├── pm2-run.sh
+│   ├── pm2-status.sh
+│   └── pm2-stop.sh
 └── springboot_sh
     ├── app.pid
     └── script
