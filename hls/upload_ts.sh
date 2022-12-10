@@ -24,7 +24,7 @@ sudo ffmpeg \
     -hls_list_size 10000 \
     -f hls ./$BASENAME/$BASENAME.m3u8;
 
-# Upload ts files to Remote Server
+# Upload ts files to Remote Servers
 sshpass -p $REMOTE_PWD scp -r ./$BASENAME/* $REMOTE_ID@$REMOTE_IP:$REMOTE_HLS_DIR;
 
 mv $LOCAL_FILE ../
