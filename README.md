@@ -35,12 +35,12 @@
 │       ├── status.sh
 │       ├── stop.sh
 │       └── 설명
-└── bootstrap.sh    # 하위 모든 */*.sh 를 자동 source (쉘 설정에서 한 줄로 로드)
+└── bootstrap.sh    # claude-code/*.sh 를 자동 source (쉘 설정에서 한 줄로 로드)
 ```
 
 ## bootstrap.sh 사용법
 
-주제 폴더의 alias/function 을 쉘에 자동 로드하려면 `~/.zshrc` 또는 `~/.bashrc` 끝에 한 줄 추가:
+`claude-code/*.sh` 의 alias/function 을 쉘에 자동 로드하려면 `~/.zshrc` 또는 `~/.bashrc` 끝에 한 줄 추가 (다른 주제 폴더는 운영용 실행 스크립트라 로드하지 않음):
 
 ```bash
 [ -f "$HOME/shell_script/bootstrap.sh" ] && source "$HOME/shell_script/bootstrap.sh"

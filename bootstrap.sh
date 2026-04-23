@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # =============================================================================
-# shell_script 레포의 모든 하위 *.sh 를 자동 source.
+# shell_script 레포의 claude-code/*.sh 만 자동 source.
+# (다른 폴더는 운영용 실행 스크립트라 쉘에 로드하지 않음)
 #
 # 사용법: ~/.zshrc 또는 ~/.bashrc 끝에 한 줄 추가
 #   [ -f "$HOME/path/to/shell_script/bootstrap.sh" ] && source "$HOME/path/to/shell_script/bootstrap.sh"
@@ -15,8 +16,8 @@ else
   _SS_ROOT="$(pwd)"
 fi
 
-# 주제별 하위 디렉토리의 모든 .sh 로드 (bootstrap.sh 자체는 제외)
-for _ss_f in "$_SS_ROOT"/*/*.sh; do
+# claude-code 폴더의 모든 .sh 만 로드
+for _ss_f in "$_SS_ROOT"/claude-code/*.sh; do
   [ -r "$_ss_f" ] && . "$_ss_f"
 done
 
