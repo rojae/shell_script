@@ -13,10 +13,10 @@ claude chat             # 평소처럼 정상 동작
 
 ## 로드 방법
 
-레포 루트의 `bootstrap.sh` 를 쉘 설정에 추가하면 자동으로 source 됨:
+이 폴더의 `bootstrap.sh` 를 쉘 설정에 추가하면 `claude-code/*.sh` 가 자동으로 source 됨:
 
 ```bash
-[ -f "$HOME/shell_script/bootstrap.sh" ] && source "$HOME/shell_script/bootstrap.sh"
+[ -f "$HOME/shell_script/claude-code/bootstrap.sh" ] && source "$HOME/shell_script/claude-code/bootstrap.sh"
 ```
 
 또는 이 파일만 직접 source:
